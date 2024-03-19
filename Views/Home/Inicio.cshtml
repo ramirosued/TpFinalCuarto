@@ -1,0 +1,22 @@
+<body class="BodyRegistro">
+<h1 class="JugPop">Jugadores en tendencia</h1>
+  
+<div class="conteiner-fluid">
+  <div class="row">
+    @foreach (Jugador item in ViewBag.PrimerosJugadores)
+    {
+      <div class="col-md-3 col-12">
+        <div class="card" style="width: 18rem; margin-bottom: 20px;">
+          <img src=@item.ImagenJugador>
+          <div class="card-body">
+            <h5 class="card-title">@item.Nombre</h5>
+            <button class="image-button" onclick=ActualizarLikes(@item.IdJugador) onclick=ComprobarInicio()></button>
+            <h4 id="CantLikes_@item.IdJugador">@item.Likes likes</h4>
+            <a href='@Url.Action("InfoJugador", new{IdJugador=@item.IdJugador})' class="btn btn-success" onclick=ComprobarInicio()>Ver Info</a>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>
+</body>

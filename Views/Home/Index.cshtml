@@ -1,0 +1,53 @@
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="ContainRegistro">
+<form class="Formulario" action='@Url.Action("Login","Account")' method="post">
+    <input class="controls" autocomplete="off" type="text" name="username" required placeholder="Ingrese Username">
+    <input class="controls" autocomplete="off" type="password" name="contraseña" required placeholder="Ingrese contraseña">
+    <input class="botons" type="submit" value="Iniciar sesión" onclick="hola()">
+</form>
+
+<a href='@Url.Action("Registro", "Home")'>Registrarse</a>
+<a href='@Url.Action("CambiarContraseña", "Home")'>Olvide mi contraseña</a>
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick=""InicioDeSeccion()>
+  Iniciar Secion
+</button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+          
+        <form class="Formulario" action='@Url.Action("Login","Account")' method="post">
+    <input autocomplete="off" type="text" name="username" required placeholder="Ingrese Username">
+    <input autocomplete="off" type="password" name="contraseña" required placeholder="Ingrese contraseña">
+    <input type="submit" value="Iniciar sesión">
+
+        </form>
+        
+
+
+      </div>
+      <div class="modal-footer">
+            <a href='@Url.Action("CambiarContraseña", "Home")' class="btn btn-primary">Olvide mi contraseña</a>
+            <a href='@Url.Action("Registro", "Home")' class="btn btn-primary">Registrarse</a>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>

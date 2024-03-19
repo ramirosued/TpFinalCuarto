@@ -1,0 +1,68 @@
+<main>
+    <div class="banner">
+        <img class="imagen-banner" src="@ViewBag.Jugador.ImagenJugador" alt="">
+        <h2>@ViewBag.Jugador.Nombre</h2>
+        <div class="imagenes-banner">
+            <a href='@Url.Action("InfoEquipo", "Home", new{IdEquipo=ViewBag.Jugador.IdEquipo})'><img src="@ViewBag.Jugador.ImEquipo"></a>
+            <img class="pais" src="@ViewBag.Jugador.ImPais" alt="">
+        </div>
+        
+    </div>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Posición</th>
+                <th>Edad</th>
+                <th>Partidos jugados</th>
+                <th>Goles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@ViewBag.Jugador.Posicion</td>
+                <td>@ViewBag.Jugador.Edad</td>
+                <td>@ViewBag.Jugador.PartidosJugados</td>
+                <td>@ViewBag.Jugador.Goles</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="descripcion">@ViewBag.Jugador.Descripcion</p>
+
+    @if (ViewBag.TitulosJugador != null)
+    {
+        <div class="titulos">
+            @foreach (TituloXJugador item in ViewBag.TitulosJugador)
+            {
+                <div class="card" style="margin-bottom: 20px; width: 9rem;">
+                    <img class="card-img-top" src="@item.Imagen" alt="Card image cap">
+                    <div class="card-body" style="text-align: center;">
+                        <p><b>@item.Nombre</b></p>
+                        <p>Año: @item.Año</p>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</main>
+
+<h2>@ViewBag.ComentariosJugador.Count comentarios</h2>
+@foreach (Comentario item in ViewBag.ComentariosJugador)
+{
+    <div class="comentario">
+    <p><b>@item.NombreUsuario</b></p>
+    <p>@item.Contenido</p>
+</div>
+}
+
+
+<form action='@Url.Action("AgregarComentario","Home")'>
+    <input type="hidden" name="IdJugador" value="@ViewBag.Jugador.IdJugador">
+    <input type="hidden" name="IdUsuario" value="@ViewBag.IdUsuario">
+    <input class="controls" autocomplete="off" type="text" name="Contenido" required
+        placeholder="Ingrese el comentario">
+    <button type="submit" value="Cargar" class="btn btn-success">Subir comentario</button>
+
+    <p id="errorIngreso"></p>
+</form>

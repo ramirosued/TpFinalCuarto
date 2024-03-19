@@ -1,0 +1,41 @@
+
+<body class="BodyRegistro">
+    
+<div class="ContainRegistro">
+     
+
+<form  action='@Url.Action("GuardarJugador","Home")' class="Registro">
+    <p>Agregar jugador</p>
+    <select name="IdPais" style="margin-bottom: 10px;">
+        <option value="" disabled selected>País de origen</option>
+        @foreach (Pais item in ViewBag.ListaPaises)
+        {
+            <option value="@item.IdPais"><p>@item.Nombre</p></option>
+        }
+    </select>
+    <select name="IdEquipo" style="margin-bottom: 10px;">
+        <option value="" disabled selected>Equipo Actual</option>
+        @foreach (Equipo item in ViewBag.ListaEquipos)
+        {
+            <option value="@item.IdEquipo"><p>@item.Nombre</p></option>
+        }
+    </select>
+    <input class="controls" autocomplete="off" type="text" name="Nombre" required placeholder="Ingrese el nombre">
+    <input class="controls" autocomplete="off" type="text" name="ImagenJugador" required
+        placeholder="Ingrese el link de la imagen del jugador">
+    <input class="controls" autocomplete="off" type="number" name="Edad" required placeholder="Ingrese la edad">
+    <input class="controls" autocomplete="off" type="text" name="Descripcion" required
+        placeholder="Ingrese la descripcion del jugador">
+    <input class="controls" autocomplete="off" type="text" name="Posicion" required
+        placeholder="Ingrese la posicion del jugador">
+    <input class="controls" autocomplete="off" type="number" name="PartidosJugados" required
+        placeholder="Ingrese los partidos jugados del jugador">
+    <input class="controls" autocomplete="off" type="number" name="Goles" required
+        placeholder="Ingrese los goles del jugador">
+    <button type="submit" value="Cargar" class="btn btn-success">Guardar jugador</button>
+
+ 
+</form>
+</div>
+   <p id="errorIngreso"></p>
+   </body>

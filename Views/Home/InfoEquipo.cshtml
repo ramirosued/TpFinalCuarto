@@ -1,0 +1,51 @@
+<main>
+  <div class="banner">
+    <img class="imagen-banner" src="@ViewBag.Equipo.Imagen" alt="">
+    <h2>@ViewBag.Equipo.Nombre</h2>
+    <div class="imagenes-banner">
+      <img class="pais" src="@ViewBag.Equipo.ImPais" alt="">
+    </div>
+  </div>
+  <p class="descripcion">@ViewBag.Equipo.Descripcion</p>
+
+  @if (ViewBag.TitulosEquipo != null)
+  {
+    <div class="titulos">
+      @foreach (TituloXEquipo item in ViewBag.TitulosEquipo)
+      {
+        <div class="card" style="margin-bottom: 20px; width: 9rem;">
+          <img class="card-img-top" src="@item.Imagen" alt="Card image cap"  >
+          <div class="card-body" style="text-align: center;">
+            <p><b>@item.Nombre</b></p>
+            <p>Año: @item.Año</p>
+          </div>
+        </div>
+      }
+    </div>
+  }
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Imagen Jugador</th>
+        <th>Nación</th>
+        <th>Posición</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach (Jugador item in ViewBag.ListaJugadores)
+      {
+
+        <tr>
+          <td><a href='@Url.Action("InfoJugador","Home", new{ IdJugador = item.IdJugador })'>@item.Nombre</a></td>
+          <td><img src="@item.ImagenJugador" alt="Imagen Jugador"></td>
+          <td><img class="pais" src="@item.ImPais" alt="Imagen País"></td>
+          <td>@item.Posicion</td>
+        </tr>
+
+
+      }
+    </tbody>
+  </table>
+</main>

@@ -10,9 +10,6 @@ html {
   }
 }
 
-body {
-  margin: 20px 60px 0px 20px;
-}
 
 footer {
   position: fixed; 
@@ -207,15 +204,13 @@ select[name="IdEquipo"] {
   font-size: 14px;
 }
 .BodyRegistro {
+  background-color: rgb(2, 92, 2);
   margin: 0;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom right, rgb(163, 163, 163), green);
+  background: linear-gradient(to bottom right,  rgba(255, 255, 255, 0.842));
 }
-.JugPop{
-  color: black;
-  text-align: center;
-}
+
 .card
 {
   background-color: rgb(255, 255, 255) !important;
@@ -256,4 +251,50 @@ justify-content: center;
 .ingre2{
   display: flex;
 justify-content: center;
+}
+.Tarjetas{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.Tarjetas div{
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 8px;
+  height: 560px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 1s;
+  overflow: hidden;
+}
+.Tarjetas img{
+  margin-bottom: 7px;
+
+  overflow: hidden;
+}
+.Tarjetas div:hover{
+  transform: scale(1.05);
+}
+.JugPop{
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  position: relative;
+  text-align: center; /* Centro del texto */
+  /* Verde sutil */
+}
+.titulo{
+  display: flex;
+  justify-content: center;
+}
+.BotonesIniciarSesion{
+display: flex;
+justify-content: center;
+}
+.botonGuardarJugador
+{
+  display: flex;
+  justify-content: center;
 }

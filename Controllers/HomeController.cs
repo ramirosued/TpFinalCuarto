@@ -24,7 +24,7 @@ public class HomeController : Controller
     }
     public IActionResult Inicio()
     {
-        
+        if (BD.user!=null) ViewBag.IdUsuario=BD.user.IdUsuario;
         ViewBag.PrimerosJugadores=BD.GetTENPlayers();
         return View(Inicio);
         
@@ -50,7 +50,7 @@ public class HomeController : Controller
             ViewBag.Jugador=BD.GetJugadorByID(IdJugador);
             ViewBag.TitulosJugador=BD.GetTitulosByJugador(IdJugador);
             ViewBag.ComentariosJugador=BD.GetComentarioByJugador(IdJugador);
-            ViewBag.IdUsuario=BD.user;
+            ViewBag.Usuario=BD.user;
         return View("InfoJugador");
         }else{
         return RedirectToAction ("Index", "Home");
@@ -105,35 +105,22 @@ public class HomeController : Controller
   
     private bool sucedio = false;
 
-    public object DarLike(int IdJugador)
+    public object DarLike(int IdJugador, int IdUsuario)
     {
         if(BD.user != null)
         {
-            if(num<=1)
-            {
-                num=BD.numeroDeLikes();
-                BD.ModificarLikes(IdJugador);
-                return new {respuesta = "OK"};
-            }else
-            {
-                num=BD.numeroDeLikesresta();
-                BD.modificarLikesResta(IdJugador);
-                return new {respuesta = "NoOK"}; 
-            }
-        }else
-        {
-            return new {respuesta = "NoLog"};
-        }
+            int likesAntes =BD.ObtenerLikesPorJugador(IdJugador);
+            int likesActualizados = BD.ModificarLikes(IdJugador,IdUsuario);
+            bool likeDado=likesActualizados>likesAntes;
+            return new {respuesta=likesActualizados, likeDado=likeDado};
+        }else return new {respuesta = "NoLog"};
     }
 
     public object ComprobarInicio()
     {
-        if(BD.user != null)
-        {
-            return new {respuesta = "OK"};
-        }else{
-            return new {respuesta = "NoLog"};
-        }
-
+        if(BD.user != null) return new {respuesta = "OK"};
+        else return new {respuesta = "NoLog"};
     }
+
+    
 }

@@ -19,7 +19,7 @@ function verificarContraseña() {
 
 
 
-function ActualizarLikes(IdJ) 
+function ActualizarLikes(IdJ, IdU) 
 {
     
     $.ajax(
@@ -27,7 +27,7 @@ function ActualizarLikes(IdJ)
             type:'POST',
             dataType:'JSON',
             url:'/Home/DarLike',
-            data:{IdJugador: IdJ},
+            data:{IdJugador: IdJ, idUsuario: IdU},
             success:
             function(response){
                 // sumar 1 en el like
@@ -36,16 +36,8 @@ function ActualizarLikes(IdJ)
                     alert("Primero debes loguearte");
                 }
                 else{
-                    if(response.respuesta == "OK")
-                    {
-                        let likesantes = parseInt($("#CantLikes_" + IdJ).html()) +1
-                    $("#CantLikes_" + IdJ).html(likesantes)
-                    }else
-                    {
-                        let likesantes = parseInt($("#CantLikes_" + IdJ).html()) -1
-                        $("#CantLikes_" + IdJ).html(likesantes) 
-                    }
-                    
+                    //if(response.likeDado) document.getElementById()
+                    document.getElementById("CantLikes_"+IdJ).innerText=response.respuesta+ " likes";
                 }
 
             }

@@ -105,3 +105,42 @@ C:\Users\Pablo\Documents\ort 4año\programacion\TP11\obj\Debug\net6.0\refint\TP1
 C:\Users\Pablo\Documents\ort 4año\programacion\TP11\obj\Debug\net6.0\TP11.pdb
 C:\Users\Pablo\Documents\ort 4año\programacion\TP11\obj\Debug\net6.0\TP11.genruntimeconfig.cache
 C:\Users\Pablo\Documents\ort 4año\programacion\TP11\obj\Debug\net6.0\ref\TP11.dll
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\appsettings.Development.json
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\appsettings.json
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\TP11.staticwebassets.runtime.json
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\TP11.exe
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\TP11.deps.json
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\TP11.runtimeconfig.json
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\TP11.dll
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\TP11.pdb
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\Dapper.dll
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\System.Data.SqlClient.dll
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+d:\prog5\TpFinalCuarto\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.csproj.AssemblyReference.cache
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.GeneratedMSBuildEditorConfig.editorconfig
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.AssemblyInfoInputs.cache
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.AssemblyInfo.cs
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.csproj.CoreCompileInputs.cache
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.MvcApplicationPartsAssemblyInfo.cache
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.RazorAssemblyInfo.cache
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.RazorAssemblyInfo.cs
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\staticwebassets\msbuild.TP11.Microsoft.AspNetCore.StaticWebAssets.props
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\staticwebassets\msbuild.build.TP11.props
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TP11.props
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TP11.props
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\staticwebassets.pack.json
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\staticwebassets.build.json
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\staticwebassets.development.json
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\scopedcss\bundle\TP11.styles.css
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\scopedcss\projectbundle\TP11.bundle.scp.css
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.csproj.CopyComplete
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.dll
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\refint\TP11.dll
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.pdb
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\TP11.genruntimeconfig.cache
+d:\prog5\TpFinalCuarto\obj\Debug\net6.0\ref\TP11.dll

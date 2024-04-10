@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RGpQKGvVl6jBbeVMKB2o9NB5RfwjUz0aRECeaj2qplY=",
+  "Hash": "xU12i6RVcaSiQJoFY5xFjLatzOE/2TiD2VaoBdPlmsk=",
   "Source": "TP11",
   "BasePath": "_content/TP11",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TP11\\wwwroot",
       "Source": "TP11",
-      "ContentRoot": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\wwwroot\\",
+      "ContentRoot": "d:\\prog5\\TpFinalCuarto\\wwwroot\\",
       "BasePath": "_content/TP11",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css",
+      "Identity": "d:\\prog5\\TpFinalCuarto\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css",
       "SourceId": "TP11",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "d:\\prog5\\TpFinalCuarto\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TP11",
       "RelativePath": "TP11.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css"
+      "OriginalItemSpec": "d:\\prog5\\TpFinalCuarto\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TP11.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
+      "Identity": "d:\\prog5\\TpFinalCuarto\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css",
       "SourceId": "TP11",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "d:\\prog5\\TpFinalCuarto\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TP11",
       "RelativePath": "TP11.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css"
+      "OriginalItemSpec": "d:\\prog5\\TpFinalCuarto\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TP11.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\wwwroot\\css\\site.css",
+      "Identity": "d:\\prog5\\TpFinalCuarto\\wwwroot\\css\\site.css",
       "SourceId": "TP11",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\wwwroot\\",
+      "ContentRoot": "d:\\prog5\\TpFinalCuarto\\wwwroot\\",
       "BasePath": "_content/TP11",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\wwwroot\\favicon.ico",
+      "Identity": "d:\\prog5\\TpFinalCuarto\\wwwroot\\favicon.ico",
       "SourceId": "TP11",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\wwwroot\\",
+      "ContentRoot": "d:\\prog5\\TpFinalCuarto\\wwwroot\\",
       "BasePath": "_content/TP11",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\wwwroot\\Fut_Hu-removebg-preview.png",
+      "Identity": "d:\\prog5\\TpFinalCuarto\\wwwroot\\Fut_Hu-removebg-preview.png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\wwwroot\\",
+      "ContentRoot": "d:\\prog5\\TpFinalCuarto\\wwwroot\\",
       "BasePath": "_content/TP11",
       "RelativePath": "Fut_Hu-removebg-preview.png",
       "AssetKind": "All",
@@ -102,10 +102,44 @@
       "OriginalItemSpec": "wwwroot\\Fut_Hu-removebg-preview.png"
     },
     {
-      "Identity": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\wwwroot\\imagenPrincipal.png",
+      "Identity": "d:\\prog5\\TpFinalCuarto\\wwwroot\\heart (1).png",
       "SourceId": "TP11",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\wwwroot\\",
+      "ContentRoot": "d:\\prog5\\TpFinalCuarto\\wwwroot\\",
+      "BasePath": "_content/TP11",
+      "RelativePath": "heart (1).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\heart (1).png"
+    },
+    {
+      "Identity": "d:\\prog5\\TpFinalCuarto\\wwwroot\\heart (2).png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\prog5\\TpFinalCuarto\\wwwroot\\",
+      "BasePath": "_content/TP11",
+      "RelativePath": "heart (2).png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\heart (2).png"
+    },
+    {
+      "Identity": "d:\\prog5\\TpFinalCuarto\\wwwroot\\imagenPrincipal.png",
+      "SourceId": "TP11",
+      "SourceType": "Discovered",
+      "ContentRoot": "d:\\prog5\\TpFinalCuarto\\wwwroot\\",
       "BasePath": "_content/TP11",
       "RelativePath": "imagenPrincipal.png",
       "AssetKind": "All",
@@ -119,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\imagenPrincipal.png"
     },
     {
-      "Identity": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\wwwroot\\js\\site.js",
+      "Identity": "d:\\prog5\\TpFinalCuarto\\wwwroot\\js\\site.js",
       "SourceId": "TP11",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Pablo\\Documents\\ort 4año\\programacion\\TP11\\wwwroot\\",
+      "ContentRoot": "d:\\prog5\\TpFinalCuarto\\wwwroot\\",
       "BasePath": "_content/TP11",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

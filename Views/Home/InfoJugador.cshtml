@@ -59,7 +59,8 @@
 
 <form action='@Url.Action("AgregarComentario","Home")'>
     <input type="hidden" name="IdJugador" value="@ViewBag.Jugador.IdJugador">
-    <input type="hidden" name="IdUsuario" value="@ViewBag.IdUsuario">
+    <input type="hidden" name="IdUsuario" value="@ViewBag.Usuario.IdUsuario">
+    <input type="hidden" name="NombreUsuario" value="@ViewBag.Usuario.username">
     <input class="controls" autocomplete="off" type="text" name="Contenido" required
         placeholder="Ingrese el comentario">
     <button type="submit" value="Cargar" class="btn btn-success">Subir comentario</button>

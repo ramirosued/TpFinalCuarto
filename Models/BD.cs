@@ -8,7 +8,7 @@ public static class BD
     public static Usuario user = null;
 
 
-    public static string _connectionString = @"Server=DESKTOP-K5G1LDU\SQLEXPRESS;DataBase=FuthubBD;Trusted_Connection=True;";
+    public static string _connectionString = @"Server=DESKTOP-0JV76DN\SQLEXPRESS;DataBase=FuthubBD;Trusted_Connection=True;";
 
     public static void CrearUsuario(Usuario us)
     {
@@ -238,16 +238,26 @@ public static class BD
             return db.QueryFirstOrDefault<int>(sp, new { idJugador }, commandType: CommandType.StoredProcedure);
         }
     }
+public static int GetAdministradorById(string username)
+{
+int numero = 0;
+        using (SqlConnection BD = new SqlConnection(_connectionString))
+        {
+            string sql = "SELECT administrador FROM Usuario WHERE username=@username";
+            numero = BD.QueryFirstOrDefault<int>(sql, new { username = username });
+        }
+        return numero;
+}
 
-    /*
-            public static int numeroDeLikes(){
-            int numero=2;
-            return numero;
-            }
-            public static int numeroDeLikesresta(){
-            int numero=0;
-            return numero;
-            }
-    */
+
+   public static void eliminarJugadorById(int IdJugador)
+    {
+        using (SqlConnection db = new SqlConnection(_connectionString))
+        {
+            string sp = "EliminarJugador";
+            db.Execute(sp, new { IdJugador = IdJugador}, commandType: CommandType.StoredProcedure);
+        }
+    }
+
 
 }

@@ -121,6 +121,11 @@ public class HomeController : Controller
         if(BD.user != null) return new {respuesta = "OK"};
         else return new {respuesta = "NoLog"};
     }
+ public IActionResult EliminarJugador(int IdJugador)
+    {
+        BD.eliminarJugadorById(IdJugador);
 
+        return RedirectToAction ("Inicio");
+    }
     
 }

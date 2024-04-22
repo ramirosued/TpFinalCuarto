@@ -79,6 +79,26 @@
 </div>
 
 }
+@if(BD.user!=null){
+  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Cerrar Sesion
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">¿Deseas cerrar sesión?</h1>
+        
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+        <a class="btn btn-outline-danger" href='@Url.Action("CerrarSesion", "Home")'>Cerrar sesión</a>
+      </div>
+    </div>
+  </div>
+</div>
+}
 
 
     </div>

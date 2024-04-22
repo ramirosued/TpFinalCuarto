@@ -2,13 +2,17 @@
     <div class="banner">
         <img class="imagen-banner" src="@ViewBag.Jugador.ImagenJugador" alt="">
         <h2>@ViewBag.Jugador.Nombre</h2>
+        <button class="image-button" onclick="ActualizarLikes(@ViewBag.Jugador.IdJugador, @BD.user.IdUsuario)" onclick=ComprobarInicio()></button>
+        <h4 id="CantLikes_@ViewBag.Jugador.IdJugador">@ViewBag.Jugador.Likes likes</h4>
         <div class="imagenes-banner">
-            <a href='@Url.Action("InfoEquipo", "Home", new{IdEquipo=ViewBag.Jugador.IdEquipo})'><img src="@ViewBag.Jugador.ImEquipo"></a>
+            <a href='@Url.Action("InfoEquipo", "Home", new{IdEquipo=ViewBag.Jugador.IdEquipo})'><img
+                    src="@ViewBag.Jugador.ImEquipo"></a>
             <img class="pais" src="@ViewBag.Jugador.ImPais" alt="">
+
         </div>
-        
+
     </div>
-    
+
     <table>
         <thead>
             <tr>
@@ -51,9 +55,9 @@
 @foreach (Comentario item in ViewBag.ComentariosJugador)
 {
     <div class="comentario">
-    <p><b>@item.NombreUsuario</b></p>
-    <p>@item.Contenido</p>
-</div>
+        <p><b>@item.NombreUsuario</b></p>
+        <p>@item.Contenido</p>
+    </div>
 }
 
 
@@ -67,6 +71,23 @@
 
     <p id="errorIngreso"></p>
 </form>
-@if(BD.user.administrador){
-    <a href='@Url.Action("EliminarJugador", "Home", new{IdJugador=ViewBag.Jugador.IdJugador})'><button onclick="confirm('Estas seguro que quieres eliminar el jugador?')">Elimiar jugador</button></a>
+@if (BD.user.administrador)
+{
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar jugador</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">¿Estás seguro que deseas eliminar el jugador?</h1>
+        
+      </div>
+      <div class="modal-body">
+        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">Cancelar</button>
+        <a class="btn btn-outline-danger" href='@Url.Action("EliminarJugador", "Home", new{IdJugador=ViewBag.Jugador.IdJugador})'>Aceptar</a>
+      </div>
+    </div>
+  </div>
+</div>
+    
 }

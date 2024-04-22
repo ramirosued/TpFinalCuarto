@@ -8,7 +8,11 @@ public static class BD
     public static Usuario user = null;
 
 
+<<<<<<< HEAD
     public static string _connectionString = @"Server=DESKTOP-K5G1LDU\SQLEXPRESS;DataBase=FuthubBD;Trusted_Connection=True;";
+=======
+    public static string _connectionString = @"Server=PASQU\SQLEXPRESS;DataBase=FuthubBD;Trusted_Connection=True;";
+>>>>>>> d7d4e8efb08a798ed763ec261ebd56d47f4f7c39
 
     public static void CrearUsuario(Usuario us)
     {

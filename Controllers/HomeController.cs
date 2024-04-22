@@ -26,7 +26,7 @@ public class HomeController : Controller
     {
         if (BD.user!=null) ViewBag.IdUsuario=BD.user.IdUsuario;
         ViewBag.PrimerosJugadores=BD.GetTENPlayers();
-        return View(Inicio);
+        return View();
         
         
     }

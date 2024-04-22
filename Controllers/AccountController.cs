@@ -18,7 +18,6 @@ public class Account : Controller
         contra=BD.GetContraseñaPorUsername(username);
         if(contra==contraseña){
             BD.user=BD.GetUsuarioByUsername(username);
-            ViewBag.administrador=BD.GetAdministradorById(username);
             return RedirectToAction("Inicio","Home");
         }else
         {

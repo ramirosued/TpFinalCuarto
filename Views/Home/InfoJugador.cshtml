@@ -67,5 +67,6 @@
 
     <p id="errorIngreso"></p>
 </form>
-
-    <a href='@Url.Action("EliminarJugador", "Home", new{IdJugador=ViewBag.Jugador.IdJugador})'><button>Elimiar jugador</button></a>
+@if(BD.user.administrador){
+    <a href='@Url.Action("EliminarJugador", "Home", new{IdJugador=ViewBag.Jugador.IdJugador})'><button onclick="confirm('Estas seguro que quieres eliminar el jugador?')">Elimiar jugador</button></a>
+}

@@ -5,5 +5,5 @@ public class Usuario{
     public string nombre{get;set;}
     public string mail{get;set;}
     public int telefono{get;set;}
-    public int administrador{get;set;}
+    public bool administrador{get;set;}
 }

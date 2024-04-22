@@ -66,3 +66,13 @@ function ComprobarInicio()
         }
     )
 }
+
+function confirmar() {
+    if (confirm('Estas seguro que quieres eliminar el jugador?')) {
+        location.href
+      } else {
+        // Do nothing!
+        console.log('Thing was not saved to the database.');
+      }
+   ; 
+}

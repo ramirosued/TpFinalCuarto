@@ -217,3 +217,4 @@ C:\Users\47958668\Documents\TpFinalCuarto-main\obj\Debug\net6.0\refint\TP11.dll
 C:\Users\47958668\Documents\TpFinalCuarto-main\obj\Debug\net6.0\TP11.pdb
 C:\Users\47958668\Documents\TpFinalCuarto-main\obj\Debug\net6.0\TP11.genruntimeconfig.cache
 C:\Users\47958668\Documents\TpFinalCuarto-main\obj\Debug\net6.0\ref\TP11.dll
+C:\Users\47958668\Documents\TpFinalCuarto-main\obj\Debug\net6.0\TP11.sourcelink.json

@@ -20,12 +20,11 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href='@Url.Action("Inicio","Home")'>Inicio</a>
         </li>
-        @if(ViewBag.administrador==0){
+        @if(BD.user!=null&&BD.user.administrador){
         <li class="nav-item">
           <a class="nav-link" href='@Url.Action("AgregarJugador", "Home")' onclick=ComprobarInicio()>Agregar un jugador</a>
         </li>
         }
-        
         
       </ul>
       

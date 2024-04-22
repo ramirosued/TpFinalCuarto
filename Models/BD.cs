@@ -239,16 +239,6 @@ public static class BD
         }
     }
 
-    public static int GetAdministradorById(string username)
-    {
-        int numero = 0;
-        using (SqlConnection BD = new SqlConnection(_connectionString))
-        {
-            string sql = "SELECT administrador FROM Usuario WHERE username=@username";
-            numero = BD.QueryFirstOrDefault<int>(sql, new { username = username });
-        }
-            return numero;
-}
 
    public static void eliminarJugadorById(int IdJugador)
     {

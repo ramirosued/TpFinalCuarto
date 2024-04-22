@@ -171,7 +171,7 @@ tr:nth-child(even) {
 }
 
 .image-button {
-  background: url("https://www.nicepng.com/png/full/778-7786050_download-instagram-like-icon-png.png") no-repeat center center; /* Ruta de tu imagen */
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png") no-repeat center center; /* Ruta de tu imagen */
   background-size:contain; /* Ajusta la imagen al tamaño del botón */
   width: 50px; /* Ancho del botón */
   height: 50px; /* Altura del botón */

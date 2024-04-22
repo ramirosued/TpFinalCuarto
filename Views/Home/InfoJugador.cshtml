@@ -32,6 +32,8 @@
 
     @if (ViewBag.TitulosJugador != null)
     {
+        <h2>Titulos</h2>
+        <hr class="linea-decorativa">
         <div class="titulos">
             @foreach (TituloXJugador item in ViewBag.TitulosJugador)
             {
@@ -46,15 +48,20 @@
         </div>
     }
 </main>
-
-<h2>@ViewBag.ComentariosJugador.Count comentarios</h2>
-@foreach (Comentario item in ViewBag.ComentariosJugador)
-{
-    <div class="comentario">
-    <p><b>@item.NombreUsuario</b></p>
-    <p>@item.Contenido</p>
+<div class="tituloComentario">
+    <h2>@ViewBag.ComentariosJugador.Count comentarios</h2>
 </div>
-}
+<div class="comentarios">
+    @foreach (Comentario item in ViewBag.ComentariosJugador)
+    {
+        <div class="comentario">
+            <div class="contenidoComentario">
+                <p><b>@item.NombreUsuario</b></p>
+                <p>@item.Contenido</p>
+            </div>
+        </div>
+    }
+</div>
 
 
 <form action='@Url.Action("AgregarComentario","Home")'>

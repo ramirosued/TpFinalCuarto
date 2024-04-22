@@ -26,7 +26,6 @@ footer {
 .ContainRegistro{
   display: flex;
   justify-content: center;
-  margin-top: 8%;
 }
 .ContainRegistro p
 {
@@ -277,14 +276,6 @@ justify-content: center;
 .Tarjetas div:hover{
   transform: scale(1.05);
 }
-.JugPop{
-  display: inline-block;
-  color: white;
-  padding: 10px;
-  position: relative;
-  text-align: center; /* Centro del texto */
-  /* Verde sutil */
-}
 .titulo{
   display: flex;
   justify-content: center;
@@ -297,4 +288,71 @@ justify-content: center;
 {
   display: flex;
   justify-content: center;
+}
+.contenedorTitulo{
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: -15px;
+}
+.contenedorJugadores{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card-body{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+card-title{
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+}
+.conteiner-fluid{
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+}
+.botonSubmit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  color: white;
+  background-color: green;
+  width: 350px;
+  height: 40px;
+}
+.comentario{
+  background-color: rgb(200, 200, 200);
+  margin-bottom: 15px;
+  width: 500px;
+  border-radius: 8px;
+}
+
+.contenidoComentario{
+  margin-top: 15px;
+  margin-left: 30px;
+}
+.comentarios{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.tituloComentario{
+  display: flex;
+    justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.linea-decorativa {
+  border: none;
+  border-top: 3px solid green; /* Cambia el grosor y color de la línea según tus preferencias */
+  margin-top: -35px;
+  width: 20%; /* Ajusta el ancho de la línea según tus necesidades */
 }

@@ -1,11 +1,11 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v6.0",
+    "name": ".NETCoreApp,Version=v7.0",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v6.0": {
+    ".NETCoreApp,Version=v7.0": {
       "TP11/1.0.0": {
         "dependencies": {
           "Dapper": "2.1.35",
@@ -17,7 +17,7 @@
       },
       "Dapper/2.1.35": {
         "runtime": {
-          "lib/net5.0/Dapper.dll": {
+          "lib/net7.0/Dapper.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.1.35.13827"
           }

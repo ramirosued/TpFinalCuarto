@@ -1,48 +1,32 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "d:\\prog5\\TpFinalCuarto\\TP11.csproj": {}
+    "D:\\prog5\\TpFinalCuarto\\TP11.csproj": {}
   },
   "projects": {
-    "d:\\prog5\\TpFinalCuarto\\TP11.csproj": {
+    "D:\\prog5\\TpFinalCuarto\\TP11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\prog5\\TpFinalCuarto\\TP11.csproj",
+        "projectUniqueName": "D:\\prog5\\TpFinalCuarto\\TP11.csproj",
         "projectName": "TP11",
-        "projectPath": "d:\\prog5\\TpFinalCuarto\\TP11.csproj",
+        "projectPath": "D:\\prog5\\TpFinalCuarto\\TP11.csproj",
         "packagesPath": "C:\\Users\\Santi Palma\\.nuget\\packages\\",
-        "outputPath": "d:\\prog5\\TpFinalCuarto\\obj\\",
+        "outputPath": "D:\\prog5\\TpFinalCuarto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Santi Palma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=======
-    "C:\\colegio\\prog\\TpFinalCuarto\\TP11.csproj": {}
-  },
-  "projects": {
-    "C:\\colegio\\prog\\TpFinalCuarto\\TP11.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\colegio\\prog\\TpFinalCuarto\\TP11.csproj",
-        "projectName": "TP11",
-        "projectPath": "C:\\colegio\\prog\\TpFinalCuarto\\TP11.csproj",
-        "packagesPath": "C:\\Users\\pasqu\\.nuget\\packages\\",
-        "outputPath": "C:\\colegio\\prog\\TpFinalCuarto\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\pasqu\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> d7d4e8efb08a798ed763ec261ebd56d47f4f7c39
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -53,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Dapper": {
               "target": "Package",
@@ -76,24 +60,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.16, 6.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.16, 6.0.16]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.16, 6.0.16]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.16, 6.0.16]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -102,11 +68,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.421\\RuntimeIdentifierGraph.json"
->>>>>>> d7d4e8efb08a798ed763ec261ebd56d47f4f7c39
         }
       }
     }

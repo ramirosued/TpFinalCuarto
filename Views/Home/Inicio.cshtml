@@ -12,7 +12,7 @@
           <img src=@item.ImagenJugador>
           <div class="card-body">
             <h5 class="card-title">@item.Nombre</h5>
-            <button class="image-button" onclick="ActualizarLikes(@item.IdJugador, @ViewBag.IdUsuario)" onclick=ComprobarInicio()></button>
+           <button class="image-button" onclick="ActualizarLikes(@item.IdJugador, @ViewBag.IdUsuario)" onclick=ComprobarInicio()></button>
             <h4 id="CantLikes_@item.IdJugador">@item.Likes likes</h4>
             <a href='@Url.Action("InfoJugador", new{IdJugador=@item.IdJugador})' class="btn btn-success" onclick=ComprobarInicio()>Ver Info</a>
           </div>
